@@ -1,0 +1,124 @@
+/* =============================================================
+   Data Analyst Portfolio — Stylesheet
+   - Edit CSS variables to change the theme quickly
+   - Uses glassmorphism + gradient accent
+   ============================================================= */
+
+/* -------------------- THEME -------------------- */
+:root{
+  --brand: #4f46e5;        /* Indigo 600 */
+  --brand-2: #22c55e;      /* Emerald 500 */
+  --bg: #0b1220;           /* Deep indigo-blue */
+  --bg-soft: #0f1b2d;
+  --text: #e6eef7;         /* light text for dark canvas */
+  --muted: #9aa4b2;
+  --card: #0f1b2d;         /* glass base */
+  --ring: rgba(79,70,229,.28);
+  --gradient: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
+}
+html.dark{
+  --bg: #050a16;
+  --bg-soft: #0b1526;
+  --text: #e6eef7;
+  --muted: #a9b4c6;
+  --card: #0f1b2d;
+  --ring: rgba(34,197,94,.28);
+}
+
+/* -------------------- BASE -------------------- */
+html,body{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  background: radial-gradient(1200px 700px at -10% -20%, rgba(79,70,229,.18), transparent 60%),
+              radial-gradient(1000px 700px at 110% 0%, rgba(34,197,94,.16), transparent 60%),
+              var(--bg);
+  min-height:100vh;scroll-behavior:smooth
+}
+h1,h2,h3,.brand-font{font-family:'Poppins',ui-sans-serif,system-ui}
+a{color:var(--brand);text-decoration:none}
+a:hover{color:var(--brand-2)}
+.btn-brand{background:var(--gradient);color:#fff;border:0}
+.btn-brand:hover{filter:brightness(1.05);box-shadow:0 8px 24px var(--ring)}
+.btn-ghost{border:1px solid rgba(255,255,255,.25);color:#fff;background:transparent}
+
+/* Glass */
+.glass{
+  background: rgba(255,255,255,.06); /* fallback */
+  background: color-mix(in oklab, var(--card), transparent 8%);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.2);
+}
+
+/* Navbar */
+.navbar{background:rgba(9,12,28,.6);backdrop-filter:blur(8px)}
+.navbar .nav-link{color:#e9edff;opacity:.85}
+.navbar .nav-link.active,.navbar .nav-link:hover{color:#fff;opacity:1}
+.brand-mark{width:36px;height:36px;background:var(--gradient);color:#fff;border-radius:12px;display:inline-grid;place-items:center}
+
+/* Hero */
+#hero{padding:120px 0 80px;position:relative;overflow:hidden}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;border-radius:999px;padding:.5rem .85rem;font-size:.9rem}
+.hero-blob{position:absolute;inset:-25% auto auto -10%;width:60vw;height:60vw;z-index:-1;background:radial-gradient(closest-side, rgba(79,70,229,.35), transparent 70%);filter:blur(28px)}
+.hero-blob-2{left:auto;right:-15%;top:-10%;background:radial-gradient(closest-side, rgba(34,197,94,.35), transparent 70%)}
+.hero-stats{gap:1.25rem}
+.hero-stats .stat{display:flex;align-items:center;gap:.6rem}
+
+/* Sections */
+section{padding:80px 0}
+.section-title{color:#fff}
+.section-sub{color:var(--muted);max-width:720px}
+
+/* Skills */
+.skill-bar{height:8px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
+.skill-fill{height:100%;background:var(--gradient);width:0;transition:width 1s ease-in-out}
+
+/* Cards */
+.card-lift{transition:transform .25s ease, box-shadow .25s ease}
+.card-lift:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.25)}
+
+/* Portfolio */
+.filter-btn.active{background:var(--gradient);color:#fff;border:0}
+.portfolio-card img{aspect-ratio:16/10;object-fit:cover;border-radius:14px}
+.badge-soft{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);color:#dfe6ff}
+
+/* Timeline */
+.timeline{position:relative;padding-left:2rem}
+.timeline:before{content:"";position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(180deg, rgba(255,255,255,.2), rgba(255,255,255,.05))}
+.tl-item{position:relative;margin-bottom:1.5rem}
+.tl-dot{position:absolute;left:-2px;top:.4rem;width:32px;height:32px;border-radius:50%;background:var(--card);border:2px solid var(--brand);display:grid;place-items:center;color:var(--brand)}
+
+/* Testimonials */
+.quote{font-size:1.05rem;color:#eaf0ff}
+
+/* Forms */
+.form-control,.form-select{background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(255,255,255,.18)}
+.form-control::placeholder{color:#b8c2ff}
+
+/* Footer */
+footer{color:#c9d2ff}
+
+/* Floating */
+.back-to-top{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:10px;background:var(--gradient);color:#fff;border:0;display:none;place-items:center;box-shadow:0 10px 26px var(--ring);z-index:999}
+.theme-toggle{position:fixed;left:18px;bottom:22px;z-index:999}
+.theme-toggle .btn{border-radius:999px;border:1px solid rgba(255,255,255,.2);color:#fff;background:rgba(255,255,255,.06)}
+
+/* Utilities */
+.text-gradient{background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent}
+.w-70ch{max-width:70ch}
+.opacity-80{opacity:.8}
+
+/* -------------------- PRELOADER -------------------- */
+#preloader{position:fixed;inset:0;background:var(--bg);display:grid;place-items:center;z-index:2000}
+#preloader .loader-wrap{padding:1.5rem 2rem;border-radius:20px;text-align:center}
+#preloader .loader-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:1rem}
+.loader-chart{position:relative;width:260px;height:140px;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.03)}
+.loader-chart .grid{position:absolute;inset:0;background:
+  linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px) 0 0/26px 100%,
+  linear-gradient(to top, rgba(255,255,255,.06) 1px, transparent 1px) 0 0/100% 28px}
+.loader-chart .bars{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:0 14px 8px}
+.loader-chart .bars span{display:block;align-self:end;width:100%;height:18%;background:var(--gradient);border-radius:8px 8px 0 0;animation:grow 1.15s calc(var(--i)*.12s) infinite ease-in-out alternate;filter:drop-shadow(0 4px 12px var(--ring))}
+@keyframes grow{from{height:18%}to{height:92%}}
+.loader-text{color:#fff;margin-top:.85rem;font-weight:600;letter-spacing:.2px}
+@media (prefers-reduced-motion: reduce){.loader-chart .bars span{animation:none}}

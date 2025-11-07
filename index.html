@@ -11,6 +11,9 @@
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#4f46e5" />>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+
   <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Blessing Igwe — Data Analyst" />
@@ -395,45 +398,61 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 portfolio-card" data-category="sql" data-aos="zoom-in" data-aos-delay="100">
-          <div class="glass p-3 h-100 card-lift">
-            <img src="https://images.unsplash.com/photo-1554230505-cd0a3b7e5b0e?q=80&w=1400&auto=format&fit=crop" alt="ETL pipeline illustration" class="w-100"/>
-            <div class="p-2">
-              <h6 class="text-white mt-2 mb-1">ETL Pipeline Automation</h6>
-              <p class="opacity-80 small">Scheduled Airflow DAGs that cleaned and unified multi-source sales data to a star schema.</p>
-              <div class="d-flex gap-2 flex-wrap mb-2">
-                <span class="badge badge-soft">Airflow</span>
-                <span class="badge badge-soft">DBT</span>
-                <span class="badge badge-soft">Snowflake</span>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#caseModal" class="btn btn-sm btn-brand" data-bs-toggle="modal" data-title="ETL Pipeline Automation" data-body="Outline sources, transformations, and reliability improvements."><i class="fa-regular fa-file-lines me-1"></i> Case Study</a>
-                <a href="#" class="btn btn-sm btn-outline-light"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Docs</a>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="col-md-6 col-lg-4 portfolio-card" data-category="dashboard" data-aos="zoom-in" data-aos-delay="100">
+  <div class="glass p-3 h-100 card-lift">
+    <img src="images/credit_card_2.jpg" alt="Consumer Complaints Dashboard" class="w-100 rounded-3 shadow-sm"/>
+    <div class="p-2">
+      <h6 class="text-white mt-2 mb-1 fw-bold">Consumer Complaints Analysis</h6>
+      <p class="opacity-80 small mb-2">
+        Interactive Tableau dashboard analyzing U.S. consumer credit card complaints — uncovering trends in issues, companies, and complaint resolution rates.
+      </p>
+      <div class="d-flex gap-2 flex-wrap mb-3">
+        <span class="badge badge-soft bg-gradient">Tableau</span>
+        <span class="badge badge-soft bg-gradient">Python</span>
+        <span class="badge badge-soft bg-gradient">Data Cleaning</span>
+      </div>
+      <div class="d-flex gap-2">
+        <a href="https://github.com/Blairssen24/consumer-complaints-analysis" target="_blank" class="btn btn-sm btn-brand">
+          <i class="fa-brands fa-github me-1"></i> GitHub
+        </a>
+        <a href="https://public.tableau.com/views/CreditCardDashboardtableau/CreditCardComplaintsDashboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" target="_blank" class="btn btn-sm btn-outline-light">
+          <i class="fa-solid fa-chart-line me-1"></i> Dashboard
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="col-md-6 col-lg-4 portfolio-card" data-category="dashboard" data-aos="zoom-in">
-          <div class="glass p-3 h-100 card-lift">
-            <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1400&auto=format&fit=crop" alt="Marketing performance dashboard" class="w-100"/>
-            <div class="p-2">
-              <h6 class="text-white mt-2 mb-1">Marketing Funnel Insights</h6>
-              <p class="opacity-80 small">Attribution & ROI analysis across channels, highlighting quick wins and long-term bets.</p>
-              <div class="d-flex gap-2 flex-wrap mb-2">
-                <span class="badge badge-soft">Looker</span>
-                <span class="badge badge-soft">GA4</span>
-                <span class="badge badge-soft">SQL</span>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#caseModal" class="btn btn-sm btn-brand" data-bs-toggle="modal" data-title="Marketing Funnel Insights" data-body="What KPIs mattered and why? How did this change spend?">
-                  <i class="fa-regular fa-file-lines me-1"></i> Case Study
-                </a>
-                <a href="#" class="btn btn-sm btn-outline-light"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live</a>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="col-md-6 col-lg-4 portfolio-card" data-category="dashboard" data-aos="zoom-in" data-aos-delay="100">
+  <div class="glass p-3 h-100 card-lift">
+    <img src="images/project_mgt.jpg" 
+         alt="Project Management Dashboard" class="w-100 rounded-3"/>
+    <div class="p-2">
+      <h6 class="text-white mt-2 mb-1">Project Management Performance Analysis</h6>
+      <p class="opacity-80 small">
+        Comprehensive analysis of project KPIs, team performance, and workflow efficiency.
+      </p>
+      <div class="d-flex gap-2 flex-wrap mb-2">
+        <span class="badge badge-soft">Power BI</span>
+        <span class="badge badge-soft">SQL</span>
+        <span class="badge badge-soft">Python</span>
+      </div>
+      <div class="d-flex gap-2">
+        <a href="https://github.com/Blairssen24/project-management-performance-analysis" target="_blank" class="btn btn-sm btn-brand">
+          <i class="fa-brands fa-github me-1"></i> GitHub
+        </a>
+        <a href="YOUR_DASHBOARD_LINK_HERE" target="_blank" class="btn btn-sm btn-outline-light">
+          <i class="fa-solid fa-chart-line me-1"></i> Live Dashboard
+        </a>
+        <a href="YOUR_POWERPOINT_LINK_HERE" target="_blank" class="btn btn-sm btn-outline-light">
+          <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> PowerPoint Slide
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
         <div class="col-md-6 col-lg-4 portfolio-card" data-category="report" data-aos="zoom-in" data-aos-delay="50">
           <div class="glass p-3 h-100 card-lift">
@@ -456,27 +475,32 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 portfolio-card" data-category="sql" data-aos="zoom-in" data-aos-delay="100">
-          <div class="glass p-3 h-100 card-lift">
-            <img src="https://images.unsplash.com/photo-1534759846116-5797a4dcd9a1?q=80&w=1400&auto=format&fit=crop" alt="SQL optimization concept" class="w-100"/>
-            <div class="p-2">
-              <h6 class="text-white mt-2 mb-1">SQL Optimization</h6>
-              <p class="opacity-80 small">Indexing & query refactors reducing processing time from 15m to 90s.</p>
-              <div class="d-flex gap-2 flex-wrap mb-2">
-                <span class="badge badge-soft">PostgreSQL</span>
-                <span class="badge badge-soft">CTEs</span>
-                <span class="badge badge-soft">Window Functions</span>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#caseModal" class="btn btn-sm btn-brand" data-bs-toggle="modal" data-title="SQL Optimization" data-body="Show before/after metrics and dashboards."><i class="fa-regular fa-file-lines me-1"></i> Case Study</a>
-                <a href="#" class="btn btn-sm btn-outline-light"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Gist</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-6 col-lg-4 portfolio-card" data-category="sql" data-aos="zoom-in" data-aos-delay="100">
+  <div class="glass p-3 h-100 card-lift">
+    <img src="images/insurance_policy.jpg" 
+         alt="Insurance Claim Analysis" class="w-100 rounded-3"/>
+    <div class="p-2">
+      <h6 class="text-white mt-2 mb-1">Insurance Claim Analysis</h6>
+      <p class="opacity-80 small">
+        SQL and Power BI project analyzing claim patterns, customer segments, and fraud indicators to support data-driven insurance decisions.
+      </p>
+      <div class="d-flex gap-2 flex-wrap mb-2">
+        <span class="badge badge-soft">SQL</span>
+        <span class="badge badge-soft">Power BI</span>
+        <span class="badge badge-soft">Data Cleaning</span>
+      </div>
+      <div class="d-flex gap-2">
+        <a href="https://github.com/Blairssen24/Insurance_Claim_Analysis" target="_blank" class="btn btn-sm btn-brand">
+          <i class="fa-brands fa-github me-1"></i> GitHub
+        </a>
+        <a href="#" class="btn btn-sm btn-outline-light">
+          <i class="fa-solid fa-chart-line me-1"></i> Dashboard
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</div>
+
 
   <!-- Case Study Modal -->
   <div class="modal fade" id="caseModal" tabindex="-1" aria-hidden="true">
@@ -495,6 +519,230 @@
       </div>
     </div>
   </div>
+
+  <!-- Dashboards / Vizzes -->
+<section id="dashboards" class="my-5">
+  <div class="container text-center mb-4">
+    <h2 class="section-title">Dashboards & Vizzes</h2>
+    <p class="section-sub mx-auto">Interactive business dashboards built using Tableau, Power BI and Excel with focus on clarity, storytelling, and insight-driven visuals.</p>
+  </div>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+       <!-- 1 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/Ecommerce_Sales_17624428772780/EcommerceDashboard" target="_blank">
+          <img src="images/ecommerce_sales_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>E-Commerce Sales Dashboard</h6>
+            <p>Profit by segment & region</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 2 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/Marketcampaign_17624301177720/Dashboard" target="_blank">
+          <img src="images/market_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Market Campaign Insights</h6>
+            <p>Marketing performance evaluation</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 3 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/ElectricVehicleDashboard_17624310443520/Dashboard1" target="_blank">
+          <img src="images/electric_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Electric Vehicle Adoption</h6>
+            <p>Growth trends & adoption distribution</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 4 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/Amazonsales_17624367647230/Dashboard1" target="_blank">
+          <img src="images/amazon_sales_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Amazon Sales Performance</h6>
+            <p>Product category revenue trends</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 5 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/CustomerComplaint_17624374208880/CustomerComplaintDashboard" target="_blank">
+          <img src="images/customer_complaint_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Customer Complaint Dashboard</h6>
+            <p>Service efficiency insights</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 6 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/airbnb_dashboard_17624383320400/Dashboard" target="_blank">
+          <img src="images/airbnb_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Airbnb Pricing & Demand</h6>
+            <p>Location-driven rental trends</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 7 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/Breaking_Bad_17624384541100/Dashboard" target="_blank">
+          <img src="images/breaking_bad_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Breaking Bad Visual Analytics</h6>
+            <p>Character & sentiment exploration</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 8 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/Datasciencejobsalaries_17624414853200/Dashboard" target="_blank">
+          <img src="images/ds_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Data Science Job Salaries</h6>
+            <p>Role, region & seniority comparisons</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 9 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/Tripadvisor_dashboard_17624420072600/Dashboard1" target="_blank">
+          <img src="images/trip_advisor_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>TripAdvisor Tourism Analysis</h6>
+            <p>Traveler sentiment & trends</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 10 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/Netflix_dashboard_17624422407290/Dashboard" target="_blank">
+          <img src="images/netflix_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Netflix Content Insights</h6>
+            <p>Movie & TV catalog analytics</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 11 -->
+      <div class="swiper-slide dash-card">
+        <a href="https://public.tableau.com/views/Hollywood_Stories_17624423498000/Dashboard1" target="_blank">
+          <img src="images/hollywood_dashboard.png" class="dash-img"/>
+          <div class="dash-overlay">
+            <h6>Hollywood Film Analysis</h6>
+            <p>Revenue & genre performance</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 12 -->
+    <div class="swiper-slide dash-card">
+      <a href="YOUR_POWERBI_HOSPITAL_LINK_HERE" target="_blank">
+        <img src="images/hospital_playlist.jpg" class="dash-img"/>
+        <div class="dash-overlay">
+          <h6>Hospital Emergency Room Dashboard</h6>
+          <p>Analysis of patient inflow, wait times, treatment efficiency, and resource allocation in the emergency department.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 13 -->
+    <div class="swiper-slide dash-card">
+      <a href="YOUR_EXCEL_ECOMMERCE_LINK_HERE" target="_blank">
+        <img src="images/ecommerce_sales_excel.jpg" class="dash-img"/>
+        <div class="dash-overlay">
+          <h6>E-commerce Sales Dashboard</h6>
+          <p>Insights on sales, profit, number of orders, profit margins, product quantities, and overall revenue performance.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 14 -->
+    <div class="swiper-slide dash-card">
+      <a href="YOUR_POWERBI_REMOTE_WORK_LINK_HERE" target="_blank">
+        <img src="images/remote_work_dashboard.jpg" class="dash-img"/>
+        <div class="dash-overlay">
+          <h6>Impact of Remote Work on Mental Health</h6>
+          <p>Power BI dashboard analyzing employee well-being, stress levels, and productivity trends in remote work environments.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- 15 -->
+    <div class="swiper-slide dash-card">
+      <a href="https://public.tableau.com/views/HRDashboard_17380948077780/HRDASHBOARD?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+        <img src="images/hr_dashboard.png" class="dash-img"/>
+        <div class="dash-overlay">
+          <h6>HR Analysis Dashboard</h6>
+          <p>Tableau dashboard providing insights into workforce metrics, employee performance, attrition trends, and HR KPIs.</p>
+        </div>
+      </a>
+    </div>
+
+
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+  </div>
+</section>
+</div>
+
+<!-- Dashboard 4 -->
+<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+  <div class="glass p-3 h-100 card-lift">
+    <a href="https://public.tableau.com/views/Amazonsales_17624367647230/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+       target="_blank">
+      <img src="images/amazon_sales_dashboard.png" alt="Amazon Sales Dashboard" class="w-100 rounded-3">
+    </a>
+    <div class="p-2">
+      <h6 class="text-white mt-2 mb-1">Amazon Sales Dashboard</h6>
+      <p class="opacity-80 small">
+        A visualization of best-selling items, revenue trends and market share analytics for Amazon e-commerce data.
+      </p>
+      <a href="https://public.tableau.com/views/Amazonsales_17624367647230/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+         class="btn btn-sm btn-brand" target="_blank"><i class="fa-solid fa-chart-column me-1"></i> View Dashboard</a>
+    </div>
+  </div>
+</div>
+
+<!-- Dashboard 5 -->
+<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+  <div class="glass p-3 h-100 card-lift">
+    <a href="https://public.tableau.com/views/CustomerComplaint_17624374208880/CustomerComplaintDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+       target="_blank">
+      <img src="images/customer_complaint_dashboard.png" alt="Customer Complaint Dashboard" class="w-100 rounded-3">
+    </a>
+    <div class="p-2">
+      <h6 class="text-white mt-2 mb-1">Customer Complaint Dashboard</h6>
+      <p class="opacity-80 small">
+        Dashboard analyzing complaints by category, company response time and resolution success rates for service optimization.
+      </p>
+      <a href="https://public.tableau.com/views/CustomerComplaint_17624374208880/CustomerComplaintDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+         class="btn btn-sm btn-brand" target="_blank"><i class="fa-solid fa-chart-column me-1"></i> View Dashboard</a>
+    </div>
+  </div>
+</div>
+
 
   <!-- Experience / Education -->
 <section id="experience">
@@ -745,6 +993,24 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- ✅ Swiper JS (Add this before your main.js) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: { slidesPerView: 2.2 },
+      1024: { slidesPerView: 3 },
+    }
+  });
+</script>
 
 <!-- Your JS -->
 <script defer src="main.js"></script>

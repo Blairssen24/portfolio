@@ -122,3 +122,19 @@ footer{color:#c9d2ff}
 @keyframes grow{from{height:18%}to{height:92%}}
 .loader-text{color:#fff;margin-top:.85rem;font-weight:600;letter-spacing:.2px}
 @media (prefers-reduced-motion: reduce){.loader-chart .bars span{animation:none}}
+
+.mySwiper { padding: 20px 0; }
+.swiper-slide { width: 280px; }
+.dash-card { position: relative; cursor: pointer; }
+.dash-img { width: 100%; border-radius: 12px; transition: .3s; }
+.dash-card:hover .dash-img { filter: brightness(60%); }
+.dash-overlay {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 12px;
+  background: rgba(0,0,0,0.6);
+  color: #fff; text-align: left;
+  opacity: 0; transform: translateY(20px);
+  transition: .3s;
+}
+.dash-card:hover .dash-overlay { opacity: 1; transform: translateY(0); }
+
